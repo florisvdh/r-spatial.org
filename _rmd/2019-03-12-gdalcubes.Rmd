@@ -1,0 +1,35 @@
+---
+layout: post
+title: "gdalcubes: ..."
+date:  "`r format(Sys.time(), '%d %B, %Y')`"
+comments: true
+author: "Marius Appel, Edzer Pebesma"
+categories: r
+---
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+
+TOC
+
+[DOWNLOADHERE]
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_chunk$set(collapse = TRUE)
+ev = TRUE
+set.seed(131)
+```
+
+## Summary 
+
+Good: free data, optical, 10 m resolution, approx. 5 day revisit time
+The problem: tiles, time, UTM zones, resolution varies per band
+What gdalcubes does, 
+how Sentinel2 is organised on AWS
+Script that lists the tiles for a given extent / time period
+
+## What is a cube view? Resampling or aggregation.
+
+## Use case
+
+NDVI, Germany, 2018, temporal maximum, low resolution
